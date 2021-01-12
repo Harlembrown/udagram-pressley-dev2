@@ -31,8 +31,8 @@ const targetBaseURL = 'https://c402277.ssl.cf1.rackcdn.com/photos/906/images/sto
 
   /*****************************************************************************/
   app.get("/filteredimage", async (req: Request, res: Response) => 
-    {const {image_url} = req.query;
-
+    let image_url = req.query.image_url as string;
+          
       if (URL) {
         res.sendStatus(400).send(`image_url is required`);
       }
