@@ -33,12 +33,12 @@ const targetBaseURL = 'https://c402277.ssl.cf1.rackcdn.com/photos/906/images/sto
   app.get("/filteredimage", async (req: Request, res: Response) => 
     let image_url = req.query.image_url as string;
           
-      if (URL) {
+      if (image_url) {
         res.sendStatus(400).send(`image_url is required`);
       }
 
       try {
-        const filteredpath = await filterImageFromURL(URL);
+        const filteredpath = await filterImageFromURL(image_url);
         res.sendFile(filteredpath, () => deleteLocalFiles([filteredpath]));
       } catch (error) {
         res.sendStatus(422);
