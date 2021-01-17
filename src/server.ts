@@ -1,7 +1,7 @@
 import express, { Request, Response } from 'express';
 import bodyParser from 'body-parser';
 import {filterImageFromURL, deleteLocalFiles} from './util/util';
-const targetBaseURL = 'https://c402277.ssl.cf1.rackcdn.com/photos/906/images/story_full_width/sumatran-tiger-circle_44312149.jpg?1345533208';
+const targetBaseURL = 'https://upload.wikimedia.org/wikipedia/commons/b/bd/Golden_tabby_and_white_kitten_n01.jpg';
 
 (async () => {                                                                                                                                                                                                                                                                                                         
 
