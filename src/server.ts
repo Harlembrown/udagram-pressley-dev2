@@ -49,9 +49,9 @@ const targetBaseURL = 'https://c402277.ssl.cf1.rackcdn.com/photos/906/images/sto
 
   // Root Endpoint
   // Displays a simple message to the user
-  const newLocal = app.get("/", async (_req, res) => {
-    res.sendFile("try GET /filteredimage?image_url=http://udagrampressleydev2-env.eba-p5z3yppm.us-east-1.elasticbeanstalk.com/");
-  });
+  const newLocal = app.get("/", async (req, res) => {
+    res.sendFile("try GET /filteredimage?image_url=http://Udagrampressleydev4-env.eba-ifw5pivi.us-east-1.elasticbeanstalk.com/");
+  }); 
 
 
   // Start the Server
