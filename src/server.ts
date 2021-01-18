@@ -30,7 +30,8 @@ const targetBaseURL = 'https://upload.wikimedia.org/wikipedia/commons/b/bd/Golde
   //   the filtered image file [!!TIP res.sendFile(filteredpath); might be useful]
 
   /*****************************************************************************/
-  app.get("/filteredimage", async (req: Request, res: Response) => 
+  app.get("/filteredimage", async (req: Request, res: Response) => {}) 
+  // get the query variable to the endpoint.
     let image_url = req.query.image_url as string;
           
       if (image_url) {
