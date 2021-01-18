@@ -16,7 +16,7 @@ const targetBaseURL = 'https://upload.wikimedia.org/wikipedia/commons/b/bd/Golde
   app.use(bodyParser.json());
 
   // @TODO1 IMPLEMENT A RESTFUL ENDPOINT
-  // GET /filteredimage?image_url={{URL}}
+  // GET /filteredimage?image_url={{http://Udagrampressleydev4-env.eba-ifw5pivi.us-east-1.elasticbeanstalk.com/}}
   // endpoint to filter an image from a public url.
   // IT SHOULD
   //    1
