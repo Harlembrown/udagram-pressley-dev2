@@ -1,4 +1,4 @@
-import express, { Request, Response } from 'express';
+import express, { req: Request, res: Response } from 'express';
 import bodyParser from 'body-parser';
 import {filterImageFromURL, deleteLocalFiles} from './util/util';
 const targetBaseURL = 'https://upload.wikimedia.org/wikipedia/commons/b/bd/Golden_tabby_and_white_kitten_n01.jpg';
